@@ -167,6 +167,7 @@ alias mv='mv -i'
 alias super='sudo sudo su -'
 alias gomu='sudo /sbin/ip a'
 alias luff='ssh root@95.85.45.177 -D 9999'
+alias tmux="TERM=screen-256color-bce tmux"
 
 
 #if [[ $TERM == screen]; then
