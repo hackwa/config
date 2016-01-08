@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo load `uptime | cut -d " " -f 12-`

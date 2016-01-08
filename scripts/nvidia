@@ -1,0 +1,4 @@
+#!/bin/bash
+
+util=$(nvidia-smi | grep -E "\d*\%" | awk '{print $13}')
+echo "Geforce gtx 950M: $util"
