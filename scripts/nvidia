@@ -1,4 +1,7 @@
 #!/bin/bash
 
 util=$(nvidia-smi | grep -E "\d*\%" | awk '{print $13}')
+if [[ $util == '' ]]; then
+    util="off"
+fi
 echo "Geforce gtx 950M: $util"
