@@ -169,7 +169,8 @@ alias super='sudo sudo su -'
 alias gomu='sudo /sbin/ip a'
 alias luff='ssh root@95.85.45.177 -D 9999'
 alias tmux="TERM=screen-256color-bce tmux"
-
+alias powerdown="echo 700000 | sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq;echo 1000000 | sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq"
+alias powerup="echo 2400000 | sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq;echo 2400000 | sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq"
 
 #if [[ $TERM == screen]; then
      #function precmd() {
